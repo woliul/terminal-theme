@@ -20,7 +20,17 @@
           "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
-        
+        {
+          "background": "#005f58",
+          "foreground": "#ecffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "home_icon": "\ueb06",
+            "style": "agnoster",
+            "max_depth": 3
+          },
           "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
@@ -31,7 +41,7 @@
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#009a3f{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#009a8c{{ end }}",
             "{{ if gt .Ahead 0 }}#458900{{ end }}",
-            "{{ if gt .Behind 0 }}#007098{{ end }}"
+            "{{ if gt .Behind 0 }}#ca3a00{{ end }}"
           ],
 
           "foreground": "#e2e3ff",
