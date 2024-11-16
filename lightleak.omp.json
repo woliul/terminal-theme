@@ -20,17 +20,7 @@
           "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
-        {
-          "background": "#005f58",
-          "foreground": "#ecffff",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "folder_icon": "\uf115",
-            "folder_separator_icon": " \ue0b1 ",
-            "home_icon": "\ueb06",
-            "style": "agnoster",
-            "max_depth": 3
-          },
+        
           "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
